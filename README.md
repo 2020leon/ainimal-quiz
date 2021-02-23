@@ -34,3 +34,11 @@ The only account is `ainimal@123`, whose password is `123123`.
 - If either email or password is not given, the page will alert `empty`.
 - If the password of the account is not correct, or the account is not exist,
   the page will alert `fail`.
+
+## Frontend
+
+### Frontend Viewing
+
+Just put the path of [index.html](./frontend/index.html) to browser and
+you can view the web.
+It looks simple now, and I hope it will be more beautiful later.

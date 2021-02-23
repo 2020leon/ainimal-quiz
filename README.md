@@ -42,3 +42,10 @@ The only account is `ainimal@123`, whose password is `123123`.
 Just put the path of [index.html](./frontend/index.html) to browser and
 you can view the web.
 It looks simple now, and I hope it will be more beautiful later.
+
+## References
+
+Quizzes: [AInimal 網頁工程招募小測驗](https://hackmd.io/@NlQIrkvRQoSFc-rvEAhpOQ/H1jCSz0-O)
+(zh-TW)
+
+- CORS Proxy: [JSONProxy](https://jsonp.afeld.me)

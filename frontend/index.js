@@ -8,8 +8,9 @@
             return bb - aa;
         });
         data.forEach((item) => {
-            var timestamp = new Date(item.last_message_timestamp)
-            var chatroom = `<li class="media my-4"><img src="circle-icons-profile${item.animal}.svg" class="mr-3" alt="profile"><div class="media-body"><h5 class="mt-0 mb-1">${item.nickname}</h5>${item.last_message}</div><div class="time-stamp">${timestamp.getMonth() + 1}/${timestamp.getDate()}，${getDateDiff(item.last_message_timestamp)}</div></li>`;
+            var last_message_timestamp = item.last_message_timestamp.replace(' ', 'T');
+            var timestamp = new Date(last_message_timestamp)
+            var chatroom = `<li class="media my-4"><img src="circle-icons-profile${item.animal}.svg" class="mr-3" alt="profile"><div class="media-body"><h5 class="mt-0 mb-1">${item.nickname}</h5>${item.last_message}</div><div class="time-stamp">${timestamp.getMonth() + 1}/${timestamp.getDate()}，${getDateDiff(last_message_timestamp)}</div></li>`;
             $('ul.chat-list-ul').append(chatroom);
         });
     })
